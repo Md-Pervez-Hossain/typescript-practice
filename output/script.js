@@ -45,3 +45,18 @@ obj2 = {
     age: 26,
 };
 obj2.age = 34;
+let menu;
+menu = () => {
+    console.log("conected");
+};
+menu();
+const test = (a, b, c) => {
+    return a + b;
+};
+console.log(test(12, "10"));
+const userFunction = (id, user) => {
+    console.log(`
+  user id: ${id} , user name : ${user.name} and user age : ${user.age}
+  `);
+};
+userFunction(1, { name: "pervez", age: 27 });

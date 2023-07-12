@@ -62,3 +62,27 @@ obj2 = {
   age: 26,
 };
 obj2.age = 34;
+
+let menu: Function;
+
+menu = () => {
+  console.log("conected");
+};
+menu();
+
+const test = (a: number, b: string, c?: number) => {
+  return a + b;
+};
+console.log(test(12, "10"));
+
+//alius type
+
+type numberOrString = number | string;
+type userType = { name: string; age: number };
+const userFunction = (id: numberOrString, user: userType) => {
+  console.log(`
+  user id: ${id} , user name : ${user.name} and user age : ${user.age}
+  `);
+};
+
+userFunction(1, { name: "pervez", age: 27 });
