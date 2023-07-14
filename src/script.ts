@@ -2,6 +2,8 @@
 // const country = "i love bangladesh";
 // console.log(country);
 
+import { Player } from "../module/player.js";
+
 let MyName = "pervez Hossain";
 MyName = "samira";
 let number = 34;
@@ -122,3 +124,8 @@ userInformation = (id: user, user: userInfor) => {
   console.log(`user id:${id} user name: ${user.name} user age : ${user.age}`);
 };
 userInformation(123, { name: "pervez", age: 27 });
+// clases
+const sakib = new Player("Sakib Al Hasan", 40, "Bangladesh");
+const masrafi = new Player("Masrafi", 35, "Bangladesh");
+console.log(sakib.play());
+console.log(masrafi.play());
