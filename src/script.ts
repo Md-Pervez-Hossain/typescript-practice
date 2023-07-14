@@ -86,3 +86,39 @@ const userFunction = (id: numberOrString, user: userType) => {
 };
 
 userFunction(1, { name: "pervez", age: 27 });
+// alius type
+type userId = number | string;
+type userInfo = { name: string; age: number };
+const userInfo = (id: userId, user: userInfo) => {
+  console.log(
+    `user id: ${id} , user Name:${user.name} , User age : ${user.age}`
+  );
+};
+userInfo(123, { name: "Pervez Hossain", age: 27 });
+
+//function signature
+
+let add: (a: number, b: number) => number;
+add = (a: number, b: number) => {
+  return a + b;
+};
+const addResult = add(2, 3);
+console.log(addResult);
+let calculation = (a: number, b: number, c: string) => number;
+calculation = (a: number, b: number, c: string) => {
+  if (c === "add") {
+    return a + b;
+  } else {
+    return a - b;
+  }
+};
+const calculationResult = calculation(5, 6, "minus");
+console.log(calculationResult);
+
+type user = number | string;
+type userInfor = { name: string; age: number };
+let userInformation: (id: user, user: userInfor) => void;
+userInformation = (id: user, user: userInfor) => {
+  console.log(`user id:${id} user name: ${user.name} user age : ${user.age}`);
+};
+userInformation(123, { name: "pervez", age: 27 });

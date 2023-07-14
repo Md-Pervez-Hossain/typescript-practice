@@ -60,3 +60,30 @@ const userFunction = (id, user) => {
   `);
 };
 userFunction(1, { name: "pervez", age: 27 });
+const userInfo = (id, user) => {
+    console.log(`user id: ${id} , user Name:${user.name} , User age : ${user.age}`);
+};
+userInfo(123, { name: "Pervez Hossain", age: 27 });
+//function signature
+let add;
+add = (a, b) => {
+    return a + b;
+};
+const addResult = add(2, 3);
+console.log(addResult);
+let calculation = (a, b, c) => number;
+calculation = (a, b, c) => {
+    if (c === "add") {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
+const calculationResult = calculation(5, 6, "minus");
+console.log(calculationResult);
+let userInformation;
+userInformation = (id, user) => {
+    console.log(`user id:${id} user name: ${user.name} user age : ${user.age}`);
+};
+userInformation(123, { name: "pervez", age: 27 });
