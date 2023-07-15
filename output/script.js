@@ -88,7 +88,14 @@ userInformation = (id, user) => {
 };
 userInformation(123, { name: "pervez", age: 27 });
 // clases
-const sakib = new Player("Sakib Al Hasan", 40, "Bangladesh");
+let sakib;
+sakib = new Player("Sakib Al Hasan", 40, "Bangladesh");
 const masrafi = new Player("Masrafi", 35, "Bangladesh");
 console.log(sakib.play());
 console.log(masrafi.play());
+function reactangle(option) {
+    let width = option.width;
+    let length = option.length;
+}
+const threeOptions = { width: 10, length: 20, height: 30 };
+reactangle(threeOptions);

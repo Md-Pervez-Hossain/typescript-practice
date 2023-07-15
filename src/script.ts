@@ -2,6 +2,7 @@
 // const country = "i love bangladesh";
 // console.log(country);
 
+import { isPlayer } from "../module/interface/isPlayer.js";
 import { Player } from "../module/player.js";
 
 let MyName = "pervez Hossain";
@@ -125,7 +126,20 @@ userInformation = (id: user, user: userInfor) => {
 };
 userInformation(123, { name: "pervez", age: 27 });
 // clases
-const sakib = new Player("Sakib Al Hasan", 40, "Bangladesh");
+let sakib: isPlayer;
+sakib = new Player("Sakib Al Hasan", 40, "Bangladesh");
 const masrafi = new Player("Masrafi", 35, "Bangladesh");
 console.log(sakib.play());
 console.log(masrafi.play());
+
+//interface
+interface reactangleOptions {
+  width: number;
+  length: number;
+}
+function reactangle(option: reactangleOptions) {
+  let width = option.width;
+  let length = option.length;
+}
+const threeOptions = { width: 10, length: 20, height: 30 };
+reactangle(threeOptions);
